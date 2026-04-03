@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.Test.Contacts_CRUD">
+      <class name="TestBasicDay1.LiberiesBookTest">
         <methods>
-          <include name="editContactDeatils"/>
-          <include name="viewContactAfterUpdate"/>
-          <include name="setUpData"/>
-          <include name="createUser"/>
-          <include name="deleteContact"/>
-          <include name="viewContactAfterDelete"/>
+          <include name="deleteBook"/>
         </methods>
-      </class> <!-- api.Test.Contacts_CRUD -->
+      </class> <!-- TestBasicDay1.LiberiesBookTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

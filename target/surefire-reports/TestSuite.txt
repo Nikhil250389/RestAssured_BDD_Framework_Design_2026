@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 38.374 s <<< FAILURE! - in TestSuite
-api.Test.Contacts_CRUD.viewContactAfterDelete  Time elapsed: 2.962 s  <<< FAILURE!
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 31.552 s <<< FAILURE! - in TestSuite
+api.Test.Contacts_CRUD.viewContactAfterDelete  Time elapsed: 1.669 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	expected [206] but found [200],
