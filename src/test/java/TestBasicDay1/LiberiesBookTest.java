@@ -81,7 +81,7 @@ void deleteBook() {
             .when()
             .delete("/Library/DeleteBook.php")
             .then().log().all()
-            .assertThat().statusCode(201)
+            .assertThat().statusCode(200)
             .header("Server", "Apache/2.4.52 (Ubuntu)")
             .extract().response().asString();
 
