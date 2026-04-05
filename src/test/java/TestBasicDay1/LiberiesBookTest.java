@@ -88,6 +88,7 @@ void deleteBook() {
     JsonPath js5 = new JsonPath(response5);
 
     System.out.println(js5.prettify());
+    System.out.println(js5.prettify());
 }
 
 }
