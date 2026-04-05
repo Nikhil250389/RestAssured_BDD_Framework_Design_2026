@@ -89,6 +89,7 @@ void deleteBook() {
 
     System.out.println(js5.prettify());
     System.out.println(js5.prettify());
+    System.out.println(js5.prettify());
 }
 
 }
