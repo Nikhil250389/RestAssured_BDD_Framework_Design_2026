@@ -25,6 +25,7 @@ public class mokNestedJson {
 		
 		int courseSize= js.getInt("courses.size()");
 		System.out.println("Total Course are " +courseSize);
+		System.out.println("Total Course are " +courseSize);
 		//3. Print Title of the first course
 		
 		String courseOnZeroIndux=js.getString("courses[0].title");

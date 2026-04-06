@@ -64,5 +64,6 @@ public class addPlaceApis {
 	JsonPath js2= new JsonPath(response3);
 	String name=js2.getString("name");
 	System.out.println(name);
+	System.out.println(name);
 	Assert.assertEquals("Frontline house", name);
 }}
