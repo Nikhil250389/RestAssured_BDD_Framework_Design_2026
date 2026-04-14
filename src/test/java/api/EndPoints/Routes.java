@@ -1,4 +1,4 @@
-package api.Methods;
+package api.EndPoints;
 
 public class Routes {
 
@@ -22,10 +22,7 @@ public class Routes {
 	public static String email = "nikhil.kharkhodia@gmail.com";
 	public static String password = "Nikhil@8";
 	
-	public static String base_URL_AddBook = "https://rahulshettyacademy.com/";
-	public static String addBook = "https://rahulshettyacademy.com/Library/Addbook.php";
-	public static String getBookById = "https://rahulshettyacademy.com/Library/GetBook.php";
-	public static String getBookByAutherName = "Library/GetBook.php";
-	public static String deleteBook = "Library/DeleteBook.php";
+	
+	
 
 }

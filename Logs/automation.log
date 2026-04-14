@@ -360,3 +360,51 @@
 10:18:09.795 [main] INFO  api.Test.Contacts_CRUD -  Viewing the User Contact Details after update
 10:18:10.944 [main] INFO  api.Test.Contacts_CRUD -  Deleting the User Contact deatils
 10:18:12.249 [main] INFO  api.Test.Contacts_CRUD -  Viwing the User Contact Details after delete
+08:12:34.171 [main] DEBUG api.Test.Contacts_CRUD - debugging.....
+08:12:34.199 [main] INFO  api.Test.Contacts_CRUD -  Login with valid User
+08:12:38.385 [main] INFO  api.Test.Contacts_CRUD -  Validating the User after login
+08:12:38.416 [main] INFO  api.Test.Contacts_CRUD -  Creating the User Contact
+08:12:40.480 [main] INFO  api.Test.Contacts_CRUD - Edit the User Contact Details
+08:12:42.090 [main] INFO  api.Test.Contacts_CRUD -  Viewing the User Contact Details after update
+08:12:43.992 [main] INFO  api.Test.Contacts_CRUD -  Deleting the User Contact deatils
+08:12:46.375 [main] INFO  api.Test.Contacts_CRUD -  Viwing the User Contact Details after delete
+08:12:48.185 [main] INFO  api.Test.Contacts_CRUD -  Viwing the User Contact Details after delete
+08:12:50.331 [main] INFO  api.Test.Contacts_CRUD -  Viwing the User Contact Details after delete
+08:12:51.968 [main] INFO  api.Test.Contacts_CRUD -  Viwing the User Contact Details after delete
+09:19:40.398 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:19:40.416 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:21:04.125 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:21:04.145 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:21:06.649 [main] INFO  api.Test.AddBookCRUD - ************* Validating the User after creation************
+09:29:41.280 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:29:41.297 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:29:43.756 [main] INFO  api.Test.AddBookCRUD - ************* Validating the User after creation************
+09:29:43.767 [main] INFO  api.Test.AddBookCRUD - ************* View Book By ID************
+09:31:39.752 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:31:39.773 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:31:42.206 [main] INFO  api.Test.AddBookCRUD - ************* Validating the User after creation************
+09:31:42.217 [main] INFO  api.Test.AddBookCRUD - ************* View Book By ID************
+09:34:53.207 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:34:53.225 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:34:55.548 [main] INFO  api.Test.AddBookCRUD - ************* Validating the User after creation************
+09:34:55.558 [main] INFO  api.Test.AddBookCRUD - ************* View Book By ID************
+09:38:15.992 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:38:16.028 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:38:19.795 [main] INFO  api.Test.AddBookCRUD - ************* Validating the User after creation************
+09:38:19.816 [main] INFO  api.Test.AddBookCRUD - ************* View Book By ID************
+09:38:19.972 [main] INFO  api.Test.AddBookCRUD - ************* Validating the book info after add book sucessfully by Id************
+09:41:26.339 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:41:26.357 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:41:29.574 [main] INFO  api.Test.AddBookCRUD - ************* Validating the User after creation************
+09:41:29.585 [main] INFO  api.Test.AddBookCRUD - ************* View Book By ID************
+09:41:29.731 [main] INFO  api.Test.AddBookCRUD - ************* Validating the book info after add book sucessfully by Id************
+09:46:49.340 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:46:49.366 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:46:52.459 [main] INFO  api.Test.AddBookCRUD - ************* Validating the User after creation************
+09:46:52.470 [main] INFO  api.Test.AddBookCRUD - ************* View Book By ID************
+09:46:52.636 [main] INFO  api.Test.AddBookCRUD - ************* Validating the book info after add book sucessfully by Id************
+09:50:01.114 [main] DEBUG api.Test.AddBookCRUD - debugging.....
+09:50:01.133 [main] INFO  api.Test.AddBookCRUD - ************* Adding a book************
+09:50:04.221 [main] INFO  api.Test.AddBookCRUD - ************* Validating the User after creation************
+09:50:04.231 [main] INFO  api.Test.AddBookCRUD - ************* View Book By ID************
+09:50:04.388 [main] INFO  api.Test.AddBookCRUD - ************* Validating the book info after add book sucessfully by Id************
