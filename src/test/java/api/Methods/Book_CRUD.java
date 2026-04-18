@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 
 import api.Payloads.User;
 import api.Payloads.addBookPayload;
+import api.Payloads.deleteBookPayload;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -38,23 +39,24 @@ public class Book_CRUD {
 	{
 
 		Response res = given().contentType(ContentType.JSON).
-				pathParam("AuthorName", authorName)
+				queryParam("AuthorName", authorName)
 
 				.when().get(Routes.getBookByAutherName);
 
 		return res;
 
 	}
-	public static Response deleteBookById(String id )
+	public static Response deleteBookById (deleteBookPayload deleteBookPayload)
 
 	{
 
-		Response res = given().contentType(ContentType.JSON).
+		Response res = given().contentType(ContentType.JSON).body(deleteBookPayload).
 				//pathParam("AuthorName", authorName)
 
-				when().delete(Routes.deleteBook);
+				when().post(Routes.deleteBook);
 
 		return res;
 
 	}
+	
 }

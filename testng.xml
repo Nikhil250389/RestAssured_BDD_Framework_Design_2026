@@ -10,7 +10,8 @@
 
     <test name="Test">
         <classes>
-            <class name="api.Test.Contacts_CRUD"/>
+            
+            <class name="api.Test.pet_CRUD"/>
         </classes>
     </test>
 

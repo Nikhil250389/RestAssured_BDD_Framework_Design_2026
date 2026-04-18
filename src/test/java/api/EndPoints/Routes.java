@@ -23,6 +23,8 @@ public class Routes {
 	public static String password = "Nikhil@8";
 	
 	
-	
-
+	public static String userLogin = "https://thinking-tester-contact-list.herokuapp.com/users/login";
+	public static String createPetURL = "https://petstore.swagger.io/v2/pet";
+	public static String petAvailableList = "https://petstore.swagger.io/v2/pet/findByStatus?status=available";
+	public static String petViewById = "https://petstore.swagger.io/v2/pet/{ID}";
 }

@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.Test.AddBookCRUD">
+      <class name="api.Test.Pet_CRUD">
         <methods>
-          <include name="viewBookByID"/>
+          <include name="userShouldAbleToCreatePetSuccessfully"/>
           <include name="setUpData"/>
+          <include name="userShouldNotAllowedToViewByInvlidID"/>
+          <include name="userShouldLoginSuccessfully"/>
         </methods>
-      </class> <!-- api.Test.AddBookCRUD -->
+      </class> <!-- api.Test.Pet_CRUD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,8 +1,6 @@
 
 package api.Test;
 
-import java.util.List;
-import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,58 +8,61 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.github.javafaker.Faker;
-import com.google.gson.Gson;
 
-import api.Methods.Book_CRUD;
-import api.Methods.UserEndPoints;
-import api.Payloads.User;
-import api.Payloads.addBookPayload;
-import api.Payloads.deleteBookPayload;
+
+import api.Methods.PetUserLoginCr;
+
+import api.Payloads.PetUserLoginPayload;
+
 import io.restassured.response.Response;
 
-public class AddBookCRUD {
+public class PetUserLogin {
 
-    private Faker faker;
-    private addBookPayload addBookPayload;
-    private deleteBookPayload deleteBookPayload;
-    private String bookId;
-    private Logger logger = LogManager.getLogger(AddBookCRUD.class);
-    private String author;
+ 
+    private PetUserLoginPayload userLoginPayload;
+   
+  
+    private Logger logger = LogManager.getLogger(PetUserLogin.class);
+  
     
     @BeforeClass
     public void setUpData() {
-        faker = new Faker();
 
-        addBookPayload = new addBookPayload();
-        addBookPayload.setName(faker.name().firstName());
-        addBookPayload.setIsbn(faker.regexify("[a-z]{3}"));
-        addBookPayload.setAisle(faker.number().digits(4));
-        addBookPayload.setAuthor(faker.name().firstName());
+        userLoginPayload = new PetUserLoginPayload();
+        userLoginPayload.setEmail(api.EndPoints.Routes.email);
+        userLoginPayload.setPassword(api.EndPoints.Routes.password);
+
 
         logger.info("Test data initialized successfully");
     }
 
     @Test ( priority = 1)
-    public void shouldAddBookSuccessfully() {
-        logger.info("******** Adding a Book ********");
+    public void userShouldLoginSuccessfully() {
+        logger.info("******** User Should Login Successfully ********");
 
         // Act
-        Response response = Book_CRUD.addBook(addBookPayload);
+        PetUserLoginCr userLoginMd= new PetUserLoginCr();
+       
+        Response response = userLoginMd.petUserLoginMethods(userLoginPayload);
+        
 
         // Assert
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(), 200);
 
-        String message = response.jsonPath().getString("Msg");
-        bookId = response.jsonPath().getString("ID");
-
-        logger.info("Generated Book ID: " + bookId);
+        String token = response.jsonPath().getString("token");
+        String id = response.jsonPath().getString("user._id");
+        String firstName = response.jsonPath().getString("user.firstName");
+        String lastName = response.jsonPath().getString("user.lastName");
+        String email = response.jsonPath().getString("user.email");
+        int version = response.jsonPath().getInt("user.__v");
         
 
-        Assert.assertEquals(message, "successfully added");
+        Assert.assertEquals(firstName, api.EndPoints.Routes.firstName);
+        Assert.assertEquals(lastName, api.EndPoints.Routes.lastName);
+        Assert.assertEquals(email, api.EndPoints.Routes.email);
     }
-
+/*
     @Test(dependsOnMethods = "shouldAddBookSuccessfully", priority = 2)
     public void shouldFetchBookByIdSuccessfully() {
         logger.info("******** Fetching Book By ID ********");
@@ -168,4 +169,4 @@ public void shouldDeleteBookSuccessfully() {
  */
 }
 
-}
+

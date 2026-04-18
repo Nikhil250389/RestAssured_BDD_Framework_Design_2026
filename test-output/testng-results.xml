@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-14T09:50:00 IST" name="Default suite" finished-at="2026-04-14T09:50:04 IST" duration-ms="4400">
+  <suite started-at="2026-04-18T22:14:45 IST" name="Default suite" finished-at="2026-04-18T22:14:53 IST" duration-ms="8076">
     <groups>
     </groups>
-    <test started-at="2026-04-14T09:50:00 IST" name="Default test" finished-at="2026-04-14T09:50:04 IST" duration-ms="4400">
-      <class name="api.Test.AddBookCRUD">
-        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.Test.AddBookCRUD@3eb738bb]" started-at="2026-04-14T09:50:00 IST" name="setUpData" finished-at="2026-04-14T09:50:01 IST" duration-ms="910" status="PASS">
+    <test started-at="2026-04-18T22:14:45 IST" name="Default test" finished-at="2026-04-18T22:14:53 IST" duration-ms="8076">
+      <class name="api.Test.Pet_CRUD">
+        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.Test.Pet_CRUD@73dce0e6]" started-at="2026-04-18T22:14:45 IST" name="setUpData" finished-at="2026-04-18T22:14:45 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpData -->
-        <test-method signature="addBook()[pri:1, instance:api.Test.AddBookCRUD@3eb738bb]" started-at="2026-04-14T09:50:01 IST" name="addBook" finished-at="2026-04-14T09:50:04 IST" duration-ms="3098" status="PASS">
+        <test-method signature="userShouldLoginSuccessfully()[pri:1, instance:api.Test.Pet_CRUD@73dce0e6]" started-at="2026-04-18T22:14:45 IST" name="userShouldLoginSuccessfully" finished-at="2026-04-18T22:14:49 IST" duration-ms="3642" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addBook -->
-        <test-method signature="viewBookByID()[pri:2, instance:api.Test.AddBookCRUD@3eb738bb]" started-at="2026-04-14T09:50:04 IST" name="viewBookByID" finished-at="2026-04-14T09:50:04 IST" duration-ms="349" status="PASS">
+        </test-method> <!-- userShouldLoginSuccessfully -->
+        <test-method signature="userShouldAbleToCreatePetSuccessfully()[pri:2, instance:api.Test.Pet_CRUD@73dce0e6]" started-at="2026-04-18T22:14:49 IST" name="userShouldAbleToCreatePetSuccessfully" finished-at="2026-04-18T22:14:50 IST" depends-on-methods="api.Test.Pet_CRUD.userShouldLoginSuccessfully" duration-ms="1520" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewBookByID -->
-      </class> <!-- api.Test.AddBookCRUD -->
+        </test-method> <!-- userShouldAbleToCreatePetSuccessfully -->
+        <test-method signature="userShouldViewPetByID()[pri:3, instance:api.Test.Pet_CRUD@73dce0e6]" started-at="2026-04-18T22:14:50 IST" name="userShouldViewPetByID" finished-at="2026-04-18T22:14:52 IST" depends-on-methods="api.Test.Pet_CRUD.userShouldAbleToCreatePetSuccessfully" duration-ms="1530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userShouldViewPetByID -->
+        <test-method signature="userShouldNotAllowedToViewByInvlidID()[pri:4, instance:api.Test.Pet_CRUD@73dce0e6]" started-at="2026-04-18T22:14:52 IST" name="userShouldNotAllowedToViewByInvlidID" finished-at="2026-04-18T22:14:53 IST" depends-on-methods="api.Test.Pet_CRUD.userShouldAbleToCreatePetSuccessfully" duration-ms="1322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userShouldNotAllowedToViewByInvlidID -->
+      </class> <!-- api.Test.Pet_CRUD -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
